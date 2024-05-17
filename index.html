@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Assets/imagens/favicon.png" type="image/png">
+  <title>EduCode || Home</title>
+  <link rel="stylesheet" href="Css/rootEReset.css">
+  <link rel="stylesheet" href="Css/style.css">
+
+</head>
+
+<body>
+
+  <header class="cabeca">
+
+    <div class="cabecaConteudo">
+      <a href="./index.html"><img src="./Assets/imagens/EduCode_Logo.png" alt="Logo do EduCode" class="cabecaLogo"></a>
+      <nav class="navBar">
+        <a href="#" class="navBarLink">Matrícula</a>
+        <a href="#" class="navBarLink">Sobre</a>
+        <a href="#" class="navBarLink">Contatos</a>
+        <a href="#" class="navBarLink linkLogin"><img src="./Assets/imagens/Login.png" alt="Icon de login"
+            class="icon cabecaLogin">Login</a>
+      </nav>
+    </div>
+    <button type="button" id="abrirModal" class="cabecaBtnMobile">
+      <img src="./Assets/imagens/simbolo_escuro_EduCode.png" alt="Simbolo do EduCode" class="mobileSimbolo">
+    </button>
+    <!-- Modal -->
+    <div class="cabecaModalPrincipal clicado" id="modal">
+      <div class="fundoModal" id="fundoModal"></div>
+      <div class="cabecaConteudoMobile close" id="conteudoModal">
+
+        <button type="button" class="cabecaFecharMobile" id="fecharModal"><img src="./Assets/imagens/fechar.png" alt="Um X" class="fecharMobile"></button>
+
+        <a href="./index.html"><img src="./Assets/imagens/EduCode_Logo.png" alt="Logo do EduCode"
+            class="cabecaLogoNobile"></a>
+
+        <nav class="navBarMobile">
+          <a href="#" class="navBarLinkMobile">Matrícula</a>
+          <a href="#" class="navBarLinkMobile">Sobre</a>
+          <a href="#" class="navBarLinkMobile">Contatos</a>
+          <a href="#" class="navBarLinkMobile linkLoginMobile"><img src="./Assets/imagens/Login.png" alt="Icon de login"
+              class="icon cabecaLoginMobile">Login</a>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+<script src="./js/main.js"></script>
+</body>
+
+</html>

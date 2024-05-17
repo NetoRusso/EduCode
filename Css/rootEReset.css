@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+  --cor-base: #838FFC;
+  --cor-tom: #5691E3;
+  --cor-destaque1: #A456E3;
+  --cor-destaque2: #7656E3;
+  --cor-dark: #202B45;
+  --cor-branco: #F4F1F8;
+  --cor-preto: #1A2228;
+
+  --fonte-titulo: "Radio Canada Big", sans-serif;
+  --fonte-padrao: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  min-width: 360px;
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  /* Retirar*/
+  background-color: var(--cor-base);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Menu top */
+
+.cabeca {
+  width: 100%;
+  padding: 0 10%;
+  position: fixed;
+  top: 20px;
+}
+
+.cabecaConteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(244, 241, 248, 0.3);
+  padding: 10px 20px;
+  border-radius: 40px;
+  background-blend-mode: luminosity;
+}
+
+.cabecaLogo {
+  width: auto;
+  height: 32px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* opacity: 1; */
+
+}
+
+.navBarLink {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-dark);
+  font-size: 24px;
+}
+
+.linkLogin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cabecaLogin {
+  width: auto;
+  height: 32px; 
+}
+
+.cabecaBtnMobile,
+.cabecaConteudoMobile {
+  display: none;
+}
+
+
+/* Media Querry */
+
+@media (max-width: 890px) {
+
+  .cabeca {
+    padding: 0;
+    left: 20px;
+
+  }
+
+  .cabecaConteudo {
+    display: none;
+  }
+
+  .cabecaBtnMobile {
+    display: block;
+    height: 48px;
+    width: 48px;
+    background-color: rgba(244, 241, 248, 0.3);
+    border: none;
+    border-radius: 50px;
+
+  }
+  
+  .mobileSimbolo {
+    height: 32px;
+    width: auto;
+  }
+
+
+  /* modal do mobile */
+  .cabecaModalPrincipal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .fundoModal {
+    background-color: rgba(26, 34, 40, 0.6);
+    transition: all 1ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  } 
+
+  .cabecaConteudoMobile {
+    width: 50%;
+    height: 50%;
+    max-width: 300px;
+    min-width: 180px;
+    position: absolute;
+    background-color: var(--cor-branco);
+    border-bottom-right-radius: 50px;
+    display: block;
+    left: -500px;
+    z-index: 2;
+    /* pointer-events: none; */
+  }
+
+  .cabecaFecharMobile {
+    width: 48px;
+    height: 48px;
+    border: none;
+    position: absolute;
+    background-color: transparent;
+    top: 20px;
+    left: 20px;
+  }
+
+  .fecharMobile {
+    height: 32px;
+    width: auto;
+  }
+
+  .cabecaLogoNobile {
+    width: auto;
+    height: 28px;
+    margin: 100px 0 0 20px;
+  }
+
+  .navBarMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0 0 20px;
+    gap: 10px;
+  }
+
+  .navBarLinkMobile {
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    color: var(--cor-dark);
+    font-size: 20px;
+  }
+
+  .linkLoginMobile {
+    display: flex;
+    gap: 5px;
+  }
+
+  .cabecaLoginMobile {
+    width: auto;
+    height: 24px;
+  }
+
+  .open {
+    animation: abrir 500ms linear;
+    left: 0;
+  }
+
+  .close {
+    animation: fechar 500ms linear;
+    left: -500px;
+  }
+
+  .clicado{
+    display: none;
+  }
+
+
+  @keyframes abrir {
+    0% {
+      left: -500px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes fechar {
+    0%{
+      left: 0;
+    }
+    100% {
+      left: -500px;
+    }
+  }
+
+}
