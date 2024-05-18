@@ -12,16 +12,17 @@
 </head>
 
 <body>
-
+<!-- Adicionar o cabeca em todas as páginas -->
   <header class="cabeca">
 
     <div class="cabecaConteudo">
       <a href="./index.html"><img src="./Assets/imagens/EduCode_Logo.png" alt="Logo do EduCode" class="cabecaLogo"></a>
       <nav class="navBar">
-        <a href="#" class="navBarLink">Matrícula</a>
-        <a href="#" class="navBarLink">Sobre</a>
-        <a href="#" class="navBarLink">Contatos</a>
-        <a href="#" class="navBarLink linkLogin"><img src="./Assets/imagens/Login.png" alt="Icon de login"
+        <!-- Adicionar | linkAtivo | na pagina atual -->
+        <a href="#" class="navBarLink matriculaLink">Matrícula</a>
+        <a href="#" class="navBarLink sobreLink">Sobre</a>
+        <a href="#" class="navBarLink contatosLink">Contatos</a>
+        <a href="#" class="navBarLink loginLink"><img src="./Assets/imagens/Login.png" alt="Icon de login"
             class="icon cabecaLogin">Login</a>
       </nav>
     </div>
@@ -50,6 +51,91 @@
     </div>
 
   </header>
+  <!-- fim da copia -->
+
+  <div class="banner">
+    <video id="bannerVideo" class="bannerVideo" autoplay loop muted>
+      <source src="./Assets/videos/programando_1920x1080.mp4" type="video/mp4">
+      Seu navegador não suporta o player!
+    </video>
+
+    <div class="bannerChamada">
+      <img src="./Assets/imagens/EduCode_Logo_branco.png" alt="logo do EduCode" class="bannerLogo">
+      <h1 class="bannerTitulo">A escola de programação que é A sua cara!</h1>
+    </div>
+
+    <div class="detalhe"></div>
+
+  </div>
+
+  <main class="principal">
+
+    <section class="promocao" aria-label="Nosso proposito">
+
+      <div class="promocaoContainer">
+        <div class="promocaoTextos">
+          <h2 class="promocaoTitulo"> Aprenda, Pratique e Conquiste:</h2>
+          <h3 class="promocaoSubTitulo">Junte-se aos Nossos Bootcamps Inovadores!</h3>
+          <p class="promocaoTexto"> 
+            Nosso programa de bootcamp é projetado para fornecer uma experiência educacional dinâmica e prática, ideal para quem deseja adquirir novas habilidades, mudar de carreira ou aprimorar seus conhecimentos em um curto período de tempo 
+          </p>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="bootCamps" aria-labelledby=".bootCampTitulo">
+      <h3 class="bootCampTitulo">Descubra Nossos Bootcamps Inovadores e Transforme Sua Carreira!</h3>
+
+      <div class="bootCampsCards">
+                <!-- cards -->
+
+        <div class="bootCampsCard">
+          <h4 class="bootCampsCardTitulo">
+            BootCamp Desenvolvimento web Full Stack
+          </h4>
+          <a href="#" class="cardBtn">Saiba Mais</a>
+          <img src="./Assets/imagens/desenvolvimentoWeb.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+        </div>
+
+        <div class="bootCampsCard">
+          <h4 class="bootCampsCardTitulo">
+            Boot Camps de Desenvolvimento de Jogos
+          </h4>
+          <a href="#" class="cardBtn">Saiba Mais</a>
+          <img src="./Assets/imagens/Desenvolvimento de jogos.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+        </div>
+
+        <div class="bootCampsCard">
+          <h4 class="bootCampsCardTitulo">
+            BootCamp de Analista de QA
+          </h4>
+          <a href="#" class="cardBtn">Saiba Mais</a>
+          <img src="./Assets/imagens/cientistaDeDados.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+        </div>
+
+        <div class="bootCampsCard">
+          <h4 class="bootCampsCardTitulo">
+            BootCamp de Inteligência Artificial e Machine Learning
+          </h4>
+          <a href="#" class="cardBtn">Saiba Mais</a>
+          <img src="./Assets/imagens/InteligenciaArtificial.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+        </div>
+
+        <div class="bootCampsCard">
+          <h4 class="bootCampsCardTitulo">
+            BootCamp de Cybersegurança
+          </h4>
+          <a href="#" class="cardBtn">Saiba Mais</a>
+          <img src="./Assets/imagens/ciberseguranca.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+        </div>
+
+                <!-- fim dos cards -->
+      </div>
+
+    </section>
+
+  </main>
 <script src="./js/main.js"></script>
 </body>
 

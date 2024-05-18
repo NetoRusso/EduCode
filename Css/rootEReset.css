@@ -3,14 +3,19 @@
 :root {
   --cor-base: #838FFC;
   --cor-tom: #5691E3;
-  --cor-destaque1: #A456E3;
-  --cor-destaque2: #7656E3;
+  --cor-destaque-1: #A456E3;
+  --cor-destaque-2: #7656E3;
   --cor-dark: #202B45;
   --cor-branco: #F4F1F8;
   --cor-preto: #1A2228;
 
   --fonte-titulo: "Radio Canada Big", sans-serif;
   --fonte-padrao: "Montserrat", sans-serif;
+
+  --clamp-texto-padrao: clamp(1rem, 0.8269rem + 0.7692vw, 1.75rem);
+  --clamp-titulo-1: clamp(1.75rem, 1.4615rem + 1.2821vw, 3rem);
+  --clamp-titulo-2: clamp(1.5rem, 1.2692rem + 1.0256vw, 2.5rem);
+  --clamp-titulo-3: clamp(1.25rem, 1.0192rem + 1.0256vw, 2.25rem);
 }
 
 * {
@@ -20,17 +25,19 @@
 }
 
 html {
-  width: 100vw;
+  max-width: 100vw;
   min-width: 360px;
   height: auto;
   min-height: 100%;
+  /* overflow-x: hidden; */
 }
 
 body {
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   /* Retirar*/
-  background-color: var(--cor-base);
+  /* background-color: var(--cor-base); */
 }
 
 a {
@@ -45,38 +52,71 @@ a {
   padding: 0 10%;
   position: fixed;
   top: 20px;
+  z-index: 4;
 }
 
 .cabecaConteudo {
+  height: 64px;
+  min-width: 775px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(244, 241, 248, 0.3);
-  padding: 10px 20px;
+  padding: 0 30px;
   border-radius: 40px;
   background-blend-mode: luminosity;
 }
 
 .cabecaLogo {
   width: auto;
-  height: 32px;
+  height: 24px;
+}
+
+.cabecaLogo:hover {
+  cursor: pointer;
+  scale: 1.2;
+  transition: all 200ms ease-in-out;
 }
 
 .navBar {
   display: flex;
   align-items: center;
-  gap: 20px;
-  /* opacity: 1; */
-
+  gap: 30px;
 }
 
 .navBarLink {
   font-family: var(--fonte-padrao);
   color: var(--cor-dark);
   font-size: 24px;
+  font-weight: 600;
+  padding: 5px 10px;
 }
 
-.linkLogin {
+.matriculaLink {
+  width: 135px;
+  text-align: center;
+}
+
+.sobreLink {
+  width: 90px;
+}
+
+.navBarLink:hover {
+  background-color: var(--cor-dark);
+  color: var(--cor-branco);
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.linkAtivo,
+.navBarLink:active {
+  background-color: var(--cor-tom);
+  color: var(--cor-branco);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.loginLink {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -84,7 +124,7 @@ a {
 
 .cabecaLogin {
   width: auto;
-  height: 32px; 
+  height: 24px;
 }
 
 .cabecaBtnMobile,
@@ -116,7 +156,7 @@ a {
     border-radius: 50px;
 
   }
-  
+
   .mobileSimbolo {
     height: 32px;
     width: auto;
@@ -144,7 +184,7 @@ a {
     bottom: 0;
     height: 100%;
     width: 100%;
-  } 
+  }
 
   .cabecaConteudoMobile {
     width: 50%;
@@ -216,7 +256,7 @@ a {
     left: -500px;
   }
 
-  .clicado{
+  .clicado {
     display: none;
   }
 
@@ -225,15 +265,17 @@ a {
     0% {
       left: -500px;
     }
+
     100% {
       left: 0;
     }
   }
 
   @keyframes fechar {
-    0%{
+    0% {
       left: 0;
     }
+
     100% {
       left: -500px;
     }
