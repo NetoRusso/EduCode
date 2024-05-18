@@ -213,7 +213,6 @@
   top: 0;
   left: 0;
   z-index: 0;
-  box-shadow: inset 20px 20px 30px 30px var(--cor-preto);
 }
 
 
@@ -235,6 +234,14 @@
 
   .bootCampsCards {
     padding: 0 10px;
+  }
+
+  .bootCampsCard {
+    box-shadow: 0 0 5px 5px var(--cor-tom);
+  }
+
+  .bootCampsCard:hover {
+    pointer-events: none;
   }
   
 }
