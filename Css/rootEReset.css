@@ -9,6 +9,11 @@
   --cor-branco: #F4F1F8;
   --cor-preto: #1A2228;
 
+  --cor-shadow-tom-forte: rgba(86, 145, 227, 0.8);
+  --cor-shadow-tom-fraco: rgba(86, 145, 227, 0.5);
+  --cor-shadow-dark-forte: rgba(32, 43, 69, 0.8);
+  --cor-shadow-dark-fraco: rgba(32, 43, 69, 0.5);
+
   --fonte-titulo: "Radio Canada Big", sans-serif;
   --fonte-padrao: "Montserrat", sans-serif;
 
@@ -16,6 +21,7 @@
   --clamp-titulo-1: clamp(1.75rem, 1.4615rem + 1.2821vw, 3rem);
   --clamp-titulo-2: clamp(1.5rem, 1.2692rem + 1.0256vw, 2.5rem);
   --clamp-titulo-3: clamp(1.25rem, 1.0192rem + 1.0256vw, 2.25rem);
+
 }
 
 * {
@@ -52,7 +58,7 @@ a {
   padding: 0 10%;
   position: fixed;
   top: 20px;
-  z-index: 4;
+  z-index: 15;
 }
 
 .cabecaConteudo {
@@ -131,6 +137,165 @@ a {
 .cabecaConteudoMobile {
   display: none;
 }
+
+
+/* roda pé */
+
+.rodape {
+  width: 100%;
+  height: auto;
+  padding: 50px 10%;
+  background-color: var(--cor-dark);
+  bottom: 0;
+}
+
+.rodapeConteudo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rodapeBrand {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.rodapeLogo {
+  width: 150px;
+  height: auto;
+}
+
+.rodapeBrandTexto {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  font-size: clamp(0.75rem, 0.6923rem + 0.2564vw, 1rem);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.rodapeContatos {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.subscribeTexto {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  font-size: clamp(0.75rem, 0.6923rem + 0.2564vw, 1rem);
+  font-weight: 500;
+}
+
+.subscribeBox {
+  display: flex;
+}
+
+.subscribeInput {
+  width: 200px;
+  height: 48px;
+  font-family: var(--fonte-padrao);
+  border: solid 3px var(--cor-preto);
+  outline-color: var(--cor-tom);
+  padding: 5px 10px;
+}
+
+.subscribeBtn {
+  width: 48px;
+  height: 48px;
+  background-color: var(--cor-branco);
+  border: solid 3px var(--cor-preto);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: url("../Assets/imagens/favicon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.subscribeBtn:hover {
+  border: solid 5px var(--cor-tom);
+}
+
+.contatosRedes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social {
+  width: 48px;
+  height: 48px;
+}
+
+.nomeRedes {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* especificos */
+
+.linkedin {
+  background-image: url("../Assets/imagens/linkedin.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.linkedin:hover {
+  background-image: url("../Assets/imagens/linkedinHov.png");
+  scale: 0.95;
+  transition: all 200ms ease-in-out;
+}
+
+.github {
+  background-image: url("../Assets/imagens/github.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.github:hover {
+  background-image: url("../Assets/imagens/githubHov.png");
+  scale: 0.95;
+  transition: all 200ms ease-in-out;
+}
+
+.instagram {
+  background-image: url("../Assets/imagens/instagram.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.instagram:hover {
+  background-image: url("../Assets/imagens/instagramHov.png");
+  scale: 0.95;
+  transition: all 200ms ease-in-out;
+}
+
+/*  fim especificos */
+
 
 
 /* Media Querry */
@@ -258,6 +423,13 @@ a {
 
   .clicado {
     display: none;
+  }
+
+  .rodapeConteudo {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
   }
 
 

@@ -14,6 +14,7 @@
   background-attachment: fixed;
   position: fixed;
 }
+
 .detalhe {
   width: 100%;
   height: 100%;
@@ -113,6 +114,8 @@
 }
 
 
+/* Cards */
+
 .bootCamps {
   width: 100%;
   min-height: 100vh;
@@ -144,38 +147,122 @@
   gap: 100px;
 }
 
-
-
 .bootCampsCard {
   width: 320px;
-  height: 400px;
-  position: relative;
-  /* background-color: rgb(245, 191, 12); */
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 0 20px 20px var(--cor-tom);
+  box-shadow: inset 50px 75px 100px 100px var(--cor-shadow-dark-fraco);
 }
 
 .bootCampsCard:hover {
-  scale: 1.2;
-  box-shadow: none;
+  box-shadow: inset 75px 100px 120px 120px var(--cor-shadow-dark-forte), 0 0 10px 10px var(--cor-shadow-tom-fraco);
+  transition: all 300ms ease-in-out;
+  
+}
+
+.bootCampsCard:hover .bootCampsCardInfo {
+  opacity: 1;
+  bottom: 0;
   transition: all 300ms ease-in-out;
 }
 
+
+
+
+
+/* especificos */
+.desenvolvimentoWeb {
+  background-image: url("https://img.freepik.com/fotos-gratis/vista-superior-do-hacker-irreconhecivel-realizando-ataque-cibernetico-a-noite_1098-18706.jpg");
+}
+
+.desenvolvimentoDeJogos {
+  background-image: url("https://img.freepik.com/fotos-gratis/jogador-afro-americano-em-extase-depois-de-matar-um-oponente-em-um-jogo-de-tiro-multijogador-online-homem-na-mesa-do-computador-tendo-uma-explosao-de-felicidade-depois-de-derrotar-inimigos-e-vencer-o-nivel_482257-71076.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.analistaDeQA {
+  background-image: url("https://img.freepik.com/fotos-gratis/focada-jovem-lendo-e-codificacao-no-computador-vista-lateral-de-um-programador-freelance-trabalhando-em-casa_662251-813.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iAeMarchine {
+  background-image: url("https://img.freepik.com/fotos-gratis/pessoa-trabalhando-html-no-computador_23-2150038859.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cyberSeguranca {
+  background-image: url("https://img.freepik.com/fotos-gratis/pessoa-trabalhando-html-no-computador_23-2150038843.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* fim dos especificos */
+
+.bootCampsCardTextosBox {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
 .bootCampsCardTitulo {
-  width: 300px;
+  font-family: var(--fonte-titulo);
+  font-size: 28px;
+  color: var(--cor-branco);
+}
+
+.bootCampsCardSubTitulo {
   font-family: var(--fonte-titulo);
   font-size: 20px;
   text-align: center;
   color: var(--cor-branco);
-  z-index: 2;
-  position: absolute;
-  margin: 0 auto;
-  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.9));
+}
+
+.bootCampsCardTextosBoxDetalhe {
+  width: 50px;
+  height: 3px;
+  background: var(--cor-destaque-1);
+  border: 0;
+}
+
+.bootCampsCardInfo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  bottom: -10px;
+}
+
+.cardInfoTexto {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-branco);
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 600;
+}
+
+.infoajuste {
+  height: 150px;
+  width: 100%;
 }
 
 .cardBtn {
@@ -183,36 +270,93 @@
   color: var(--cor-branco);
   font-family: var(--fonte-padrao);
   font-weight: 600;
-  z-index: 2;
-  position: absolute;
-  margin: auto;
-  bottom: 20px;
-  align-self: center;
-  background-color: var(--cor-destaque-2);
   padding: 5px 10px;
-  border: 3px solid var(--cor-destaque-1);
+  border: 3px solid var(--cor-branco);
   border-radius: 20px;
-  box-shadow: inset 3px 3px 5px 5px var(--cor-destaque-1), 
-    5px 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .cardBtn:hover {
-  background-color: var(--cor-destaque-1);
+  background-color: var(--cor-);
   box-shadow: inset 3px 3px 5px 5px var(--cor-destaque-2);
   scale: 0.9;
   transition: all 300ms ease-in-out;
 }
+/* fim dos cards */
 
-.imgCard {
-  width: 320px;
+/* chamada */
+
+.chamadaMatricula {
+  width: 100%;
+  height: auto;
+  padding: 150px 0;
+}
+
+.chamadaBanner {
+  width: 100%;
   height: 400px;
-  object-fit: cover;
-  border-radius: 20px;
-  filter: blur(0.8px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+  background-image: url("../Assets/imagens/bannerchamada.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chamadaTextos {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px
+}
+
+.chamadaTitulo {
+  font-family: var(--fonte-titulo);
+  font-size: var(--clamp-titulo-1);
+  min-width: 320px;
+  width: 80%;
+  text-align: center;
+  color: var(--cor-dark);
+}
+
+.chamadaSubTitulo {
+  min-width: 320px;
+  width: 80%;
+  font-family: var(--fonte-titulo);
+  font-size: var(--clamp-titulo-3);
+  color: var(--cor-tom);
+  text-align: left;
+  padding-left: 50px;
+}
+
+.chamadaDescricao {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-preto);
+  font-size: var(--clamp-texto-padrao);
+  width: 50%;
+  min-width: 280px;
+  font-weight: 500;
+  line-height: 1.5;
+  align-self: flex-start;
+  padding-left: 12.5%;
+}
+
+.chamadaBtn {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-dark);
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: solid 5px var(--cor-dark);
+  border-radius: 50px;
+  box-shadow: 15px 12px 9px -2px var(--cor-shadow-dark-fraco);
+  margin-top: 50px;
+}
+
+.chamadaBtn:hover {
+  scale: 0.9;
+  box-shadow: inset 6px 5px 8px 1px var(--cor-shadow-tom-forte);
+  transition: all 300ms ease-in-out;
 }
 
 
@@ -229,7 +373,7 @@
   }
 
   .bootCamps {
-    padding: none;
+    padding: 0 0 50px 0;
   }
 
   .bootCampsCards {
@@ -237,11 +381,27 @@
   }
 
   .bootCampsCard {
-    box-shadow: 0 0 5px 5px var(--cor-tom);
+    box-shadow: inset 75px 100px 120px 120px var(--cor-shadow-dark-forte), 0 0 10px 10px var(--cor-shadow-tom-fraco);
   }
 
-  .bootCampsCard:hover {
-    pointer-events: none;
+  .bootCampsCardInfo {
+    opacity: 1;
   }
-  
+
+  .chamadaTextos {
+    margin-top: 50px;
+  }
+
+  .chamadaSubTitulo {
+    padding-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .chamadaDescricao {
+    align-self: none;
+    padding-left: none;
+
+  }
+
 }

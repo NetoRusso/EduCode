@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<!-- Adicionar o cabeca em todas as páginas -->
+  <!-- Adicionar o cabeca em todas as páginas -->
   <header class="cabeca">
 
     <div class="cabecaConteudo">
@@ -21,7 +21,7 @@
         <!-- Adicionar | linkAtivo | na pagina atual -->
         <a href="#" class="navBarLink matriculaLink">Matrícula</a>
         <a href="#" class="navBarLink sobreLink">Sobre</a>
-        <a href="#" class="navBarLink contatosLink">Contatos</a>
+        <a href="#contatos" class="navBarLink contatosLink">Contatos</a>
         <a href="#" class="navBarLink loginLink"><img src="./Assets/imagens/Login.png" alt="Icon de login"
             class="icon cabecaLogin">Login</a>
       </nav>
@@ -34,7 +34,8 @@
       <div class="fundoModal" id="fundoModal"></div>
       <div class="cabecaConteudoMobile close" id="conteudoModal">
 
-        <button type="button" class="cabecaFecharMobile" id="fecharModal"><img src="./Assets/imagens/fechar.png" alt="Um X" class="fecharMobile"></button>
+        <button type="button" class="cabecaFecharMobile" id="fecharModal"><img src="./Assets/imagens/fechar.png"
+            alt="Um X" class="fecharMobile"></button>
 
         <a href="./index.html"><img src="./Assets/imagens/EduCode_Logo.png" alt="Logo do EduCode"
             class="cabecaLogoNobile"></a>
@@ -76,67 +77,167 @@
         <div class="promocaoTextos">
           <h2 class="promocaoTitulo"> Aprenda, Pratique e Conquiste:</h2>
           <h3 class="promocaoSubTitulo">Junte-se aos Nossos Bootcamps Inovadores!</h3>
-          <p class="promocaoTexto"> 
-            Nosso programa de bootcamp é projetado para fornecer uma experiência educacional dinâmica e prática, ideal para quem deseja adquirir novas habilidades, mudar de carreira ou aprimorar seus conhecimentos em um curto período de tempo 
+          <p class="promocaoTexto">
+            Nosso programa de bootcamp é projetado para fornecer uma experiência educacional dinâmica e prática, ideal
+            para quem deseja adquirir novas habilidades, mudar de carreira ou aprimorar seus conhecimentos em um curto
+            período de tempo
           </p>
         </div>
       </div>
-      
     </section>
 
     <section class="bootCamps" aria-labelledby=".bootCampTitulo">
       <h3 class="bootCampTitulo">Descubra Nossos Bootcamps Inovadores e Transforme Sua Carreira!</h3>
 
       <div class="bootCampsCards">
-                <!-- cards -->
-
-        <div class="bootCampsCard">
-          <h4 class="bootCampsCardTitulo">
-            BootCamp Desenvolvimento web Full Stack
-          </h4>
-          <a href="#" class="cardBtn">Saiba Mais</a>
-          <img src="./Assets/imagens/desenvolvimentoWeb.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+        <div class="bootCampsCard desenvolvimentoWeb">
+          <div class="bootCampsCardTextosBox">
+            <h4 class="bootCampsCardTitulo">BootCamp</h4>
+            <hr class="bootCampsCardTextosBoxDetalhe" />
+            <h5 class="bootCampsCardSubTitulo">Desenvolvimento web Full Stack</h5>
+          </div>
+          <div class="bootCampsCardInfo">
+            <p class="cardInfoTexto">Mergulhe em um programa intensivo e se torne um desenvolvedor web completo!<br />
+              Domine as habilidades para construir e manter aplicações web do zero, tanto na parte frontal (front-end)
+              quanto na parte traseira (back-end).</p>
+            <a href="#" class="cardBtn">Saiba Mais</a>
+          </div>
         </div>
+        <div class="bootCampsCard desenvolvimentoDeJogos">
 
-        <div class="bootCampsCard">
-          <h4 class="bootCampsCardTitulo">
-            Boot Camps de Desenvolvimento de Jogos
-          </h4>
-          <a href="#" class="cardBtn">Saiba Mais</a>
-          <img src="./Assets/imagens/Desenvolvimento de jogos.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+          <div class="bootCampsCardTextosBox">
+            <h4 class="bootCampsCardTitulo">BootCamp</h4>
+            <hr class="bootCampsCardTextosBoxDetalhe" />
+            <h5 class="bootCampsCardSubTitulo">Desenvolvimento de Jogos</h5>
+          </div>
+
+          <div class="bootCampsCardInfo">
+            <p class="cardInfoTexto">
+              No nosso bootcamp de desenvolvimento de jogos, você aprenderá design de jogos, programação em C# e C++,
+              uso de Unity e Unreal, criação de gráficos 2D/3D, animação, som, e todo o ciclo de desenvolvimento até a
+              publicação.
+            </p>
+            <a href="#" class="cardBtn">Saiba Mais</a>
+          </div>
         </div>
+        <div class="bootCampsCard analistaDeQA">
 
-        <div class="bootCampsCard">
-          <h4 class="bootCampsCardTitulo">
-            BootCamp de Analista de QA
-          </h4>
-          <a href="#" class="cardBtn">Saiba Mais</a>
-          <img src="./Assets/imagens/cientistaDeDados.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+          <div class="bootCampsCardTextosBox">
+            <h4 class="bootCampsCardTitulo">BootCamp</h4>
+            <hr class="bootCampsCardTextosBoxDetalhe" />
+            <h5 class="bootCampsCardSubTitulo">Analista de QA</h5>
+          </div>
+
+          <div class="bootCampsCardInfo">
+            <p class="cardInfoTexto">
+              No bootcamp de Analista de QA, você aprenderá técnicas de teste de software, automação com Selenium, criação de scripts, metodologias ágeis, gestão de defeitos e garantia de qualidade no desenvolvimento.
+            </p>
+            <a href="#" class="cardBtn">Saiba Mais</a>
+          </div>
         </div>
+        <div class="bootCampsCard iAeMarchine">
 
-        <div class="bootCampsCard">
-          <h4 class="bootCampsCardTitulo">
-            BootCamp de Inteligência Artificial e Machine Learning
-          </h4>
-          <a href="#" class="cardBtn">Saiba Mais</a>
-          <img src="./Assets/imagens/InteligenciaArtificial.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+          <div class="bootCampsCardTextosBox">
+            <h4 class="bootCampsCardTitulo">BootCamp</h4>
+            <hr class="bootCampsCardTextosBoxDetalhe" />
+            <h5 class="bootCampsCardSubTitulo">Inteligência Artificial e Machine Learning</h5>
+          </div>
+
+          <div class="bootCampsCardInfo">
+            <p class="cardInfoTexto">
+              Aprenda IA e Machine Learning: conceitos, técnicas de aprendizado de máquina, TensorFlow, PyTorch, manipulação de dados, criação de modelos e aplicação em problemas reais.
+            </p>
+            <a href="#" class="cardBtn">Saiba Mais</a>
+          </div>
         </div>
+        <div class="bootCampsCard cyberSeguranca">
 
-        <div class="bootCampsCard">
-          <h4 class="bootCampsCardTitulo">
-            BootCamp de Cybersegurança
-          </h4>
-          <a href="#" class="cardBtn">Saiba Mais</a>
-          <img src="./Assets/imagens/ciberseguranca.jpg" alt="Imagem de desenvolvimento Web" class="imgCard">
+          <div class="bootCampsCardTextosBox">
+            <h4 class="bootCampsCardTitulo">BootCamp</h4>
+            <hr class="bootCampsCardTextosBoxDetalhe" />
+            <h5 class="bootCampsCardSubTitulo">Cybersegurança</h5>
+          </div>
+
+          <div class="bootCampsCardInfo">
+            <p class="cardInfoTexto">
+              Em Cybersegurança, você dominará princípios, técnicas de defesa cibernética, análise de vulnerabilidades, gestão de riscos, forense digital e práticas para proteger sistemas e dados contra ameaças cibernéticas.
+            </p>
+            <a href="#" class="cardBtn">Saiba Mais</a>
+          </div>
         </div>
-
-                <!-- fim dos cards -->
       </div>
+    </section>
 
+    <section class="chamadaMatricula">
+      <div class="chamadaBanner" ></div>
+      <div class="chamadaTextos">
+        <h2 class="chamadaTitulo">Domine sua Carreira com Bootcamps Especializados da EduCode</h2>
+        <h4 class="chamadaSubTitulo">Aprenda as Habilidades Mais Procuradas para o Mercado Atual</h4>
+        <p class="chamadaDescricao">
+          Matricule-se em nossos bootcamps e adquira conhecimentos práticos para se destacar em sua área profissional.
+        </p>
+        <a href="#" class="chamadaBtn">Matricule-se</a>
+      </div>
     </section>
 
   </main>
-<script src="./js/main.js"></script>
+
+  <footer class="rodape" >
+    
+    <div class="rodapeConteudo" id="contatos">
+      <div class="rodapeBrand">
+        <img class="rodapeLogo" src="./Assets/imagens/EduCode_Logo_branco.png" alt="Logo do Educode">
+        <p class="rodapeBrandTexto">
+          Todos os direitos reservados &copy; EduCode 2024 ||<br/> CNPJ.: 00.000.000/0000-00 .
+        </p>
+      </div>
+      
+      <div class="rodapeContatos">
+
+        <div  class="subscribe">
+          <p class="subscribeTexto">Receba as nossa atualizações</p>
+
+          <label for="subscribe" class="subscribeBox">
+            <input name="subscribe" id="subscribe" type="email" class="subscribeInput" required placeholder=" Seu melhor email">
+            <button type="submit" class="subscribeBtn"></button>
+          </label>
+        </div>
+
+        
+      </div>
+      <div class="contatosRedes">
+
+        <div class="redesNeto redes">
+          <a href="https://www.linkedin.com/in/neto-russo/" target="_blank" title="Neto Russo || Linkedin">
+            <div class="linkedin social"></div>
+          </a>
+          <a href="https://github.com/netorusso" target="_blank" title="Neto Russo || Github">
+            <div class="github social"></div>
+          </a>
+          <a href="https://www.instagram.com/neto.russo/" target="_blank" title="Neto Russo || instagram">
+            <div class="instagram social"></div>
+          </a>
+          <h5 class="nomeRedes">Neto Russo</h5>
+        </div>
+
+        <div class="redesGabriel redes">
+          <a href="https://www.linkedin.com/in/gabriel-terto-5ba253247/" target="_blank" title="Gabriel Terto || Linkedin" >
+            <div class="linkedin social"></div>
+          </a>
+          <a href="https://github.com/gabriellterto" target="_blank" title="Gabriel Terto || Github" >
+            <div class="github social"></div>
+          </a>
+          <a href="https://www.instagram.com/gaabrielmariano/" target="_blank" title="Gabriel Terto || instagram"   >
+            <div class="instagram social"></div>
+          </a>
+          <h5 class="nomeRedes">Gabriel Terto</h5>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
