@@ -19,6 +19,23 @@
   background-image: url("../Assets/imagens/desenvolvimentoWeb.jpg");
 }
 
+.desenvolvimentoJogos {
+  background-image: url("../Assets/imagens/DesenvolvimentoDeJogos.jpg");
+  background-position: bottom;
+}
+
+.analistaQA {
+  background-image: url("../Assets/imagens/analistaDeQA.jpg");
+}
+
+.aiMachine {
+  background-image: url("../Assets/imagens/InteligenciaArtificial.jpg");
+}
+
+.ciberseguranca {
+  background-image: url("../Assets/imagens/ciberseguranca.jpg");
+}
+
 /* fim especificos */
 
 .bannerTitulo {
@@ -182,6 +199,162 @@
   background-size: contain;
 }
 
+.iconUnity {
+  background-image: url("../Assets/imagens/unity.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconUnreal {
+  background-image: url("../Assets/imagens/UnReal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconCSharp {
+  background-image: url("../Assets/imagens/c-sharp.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconBlender {
+  background-image: url("../Assets/imagens/blender.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconPhotoshop {
+  background-image: url("../Assets/imagens/Photoshop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconSelenium {
+  background-image: url("../Assets/imagens/selenium.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconJUnit {
+  background-image: url("../Assets/imagens/JUnit.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconTestNG {
+  background-image: url("../Assets/imagens/testNG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconPostman {
+  background-image: url("../Assets/imagens/postman.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:  cover;
+}
+
+.iconJira {
+  background-image: url("../Assets/imagens/jira.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconJenkins {
+  background-image: url("../Assets/imagens/Jenkins-Symbol.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iconPython {
+  background-image: url("../Assets/imagens/python.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iconTensorFlow {
+  background-image: url("../Assets/imagens/Tensorflow_logo.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iconKeras {
+  background-image: url("../Assets/imagens/keras.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iconScikitLearn {
+  background-image: url("../Assets/imagens/scikit.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconPyTorch {
+  background-image: url("../Assets/imagens/PyTorch.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconPandas {
+  background-image: url("../Assets/imagens/Pandas_logo.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconNumPy {
+  background-image: url("../Assets/imagens/numpy.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iconFirewalls {
+  background-image: url("../Assets/imagens/firewalls.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iconIdsIps {
+  background-image: url("../Assets/imagens/IDS-IPS.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iconCriptografia {
+  background-image: url("../Assets/imagens/criptografado.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iconAnaliseVulnerabilidades {
+  background-image: url("../Assets/imagens/auditoria-de-seguranca.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 /* Fim tecnologias especificas */
 
 .bootCampConteudo2 {
@@ -195,7 +368,7 @@
 } 
 
 
-.coteudo2Textos {
+.conteudo2Textos {
   width: 50%;
   min-width: 320px;
   display: flex;
@@ -212,7 +385,7 @@
   text-align: start;
 }
 
-.conteudo2Descriacao {
+.conteudo2Descricao {
   width: 100%;
   min-width: 300px;
   font-family: var(--fonte-padrao);
