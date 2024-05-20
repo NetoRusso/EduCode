@@ -22,6 +22,8 @@
   --clamp-titulo-2: clamp(1.5rem, 1.2692rem + 1.0256vw, 2.5rem);
   --clamp-titulo-3: clamp(1.25rem, 1.0192rem + 1.0256vw, 2.25rem);
 
+  --clip-direita: polygon(25% 0%, 100% 0%, 100% 100%, 20% 89%, 0% 50%);
+  --clip-esquerda: polygon(0% 0%, 75% 0%, 100% 50%, 66% 91%, 0% 100%);
 }
 
 * {
@@ -147,11 +149,13 @@ a {
   padding: 50px 10%;
   background-color: var(--cor-dark);
   bottom: 0;
+  z-index: 14;
 }
 
 .rodapeConteudo {
   display: flex;
   justify-content: space-around;
+  z-index: 14;
 }
 
 .rodapeBrand {
