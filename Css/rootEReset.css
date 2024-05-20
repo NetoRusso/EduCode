@@ -116,17 +116,14 @@ a {
   transition: all 200ms ease-in-out;
 }
 
-.linkAtivo,
-.matriculaLink:active,
-.sobreLink:active,
-.loginLink:active {
+.linkAtivo {
   background-color: var(--cor-tom);
   color: var(--cor-branco);
   border-radius: 20px;
   pointer-events: none;
 }
 
-.contatosLink:active {
+.navBarLink:active {
   background-color: var(--cor-tom);
   color: var(--cor-branco);
   border-radius: 20px;
