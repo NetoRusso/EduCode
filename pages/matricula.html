@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../Assets/imagens/favicon.png" type="image/png">
+  <meta name="author" content="Neto Russo">
+  <title>EduCode || Matricula</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" href="../Css/rootEReset.css">
+  <link rel="stylesheet" href="../Css/matricula.css">
+
+</head>
+
+<body>
+  <!-- Adicionar o cabeca em todas as páginas -->
+  <header class="cabeca">
+
+    <div class="cabecaConteudo">
+      <a href="../index.html"><img src="../Assets/imagens/EduCode_Logo.png" alt="Logo do EduCode"
+          class="cabecaLogo"></a>
+      <nav class="navBar">
+
+        <!-- Adicionar | linkAtivo | na pagina atual -->
+
+        <a href="#" class="navBarLink matriculaLink linkAtivo">Matrícula</a>
+        <a href="#" class="navBarLink sobreLink">Sobre</a>
+        <a href="#contatos" class="navBarLink contatosLink">Contatos</a>
+        <a href="#" class="navBarLink loginLink"><img src="../Assets/imagens/Login.png" alt="Icon de login"
+            class="icon cabecaLogin">Login</a>
+
+      </nav>
+    </div>
+    <button type="button" id="abrirModal" class="cabecaBtnMobile">
+      <img src="../Assets/imagens/simbolo_escuro_EduCode.png" alt="Simbolo do EduCode" class="mobileSimbolo">
+    </button>
+    <!-- Modal -->
+    <div class="cabecaModalPrincipal clicado" id="modal">
+      <div class="fundoModal" id="fundoModal"></div>
+      <div class="cabecaConteudoMobile close" id="conteudoModal">
+
+        <button type="button" class="cabecaFecharMobile" id="fecharModal"><img src="../Assets/imagens/fechar.png"
+            alt="Um X" class="fecharMobile"></button>
+
+        <a href="../index.html"><img src="../Assets/imagens/EduCode_Logo.png" alt="Logo do EduCode"
+            class="cabecaLogoNobile"></a>
+
+        <nav class="navBarMobile">
+          <a href="#" class="navBarLinkMobile">Matrícula</a>
+          <a href="#" class="navBarLinkMobile">Sobre</a>
+          <a href="#contatos" class="navBarLinkMobile">Contatos</a>
+          <a href="#" class="navBarLinkMobile linkLoginMobile"><img src="../Assets/imagens/Login.png"
+              alt="Icon de login" class="icon cabecaLoginMobile">Login</a>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <div class="banner">
+    <video id="bannerVideo" class="bannerVideo" autoplay loop muted>
+      <source src="../Assets/videos/matriculeSe.mp4" type="video/mp4">
+      Seu navegador não suporta o player!
+    </video>
+
+    <div class="bannerChamada">
+      <img src="../Assets/imagens/EduCode_Logo_branco.png" alt="logo do EduCode" class="bannerLogo">
+      <h1 class="bannerTitulo">Dê o primeiro passo para o Futuro!</h1>
+    </div>
+
+    <div class="detalhe"></div>
+    <!-- fim da copia -->
+
+    <main class="principal">
+      <section class="conteudo" aria-label="Área de matriculas">
+        <div class="introducao">
+          <h2 class="introducaoTitulo">Matricule-se Nos Nossos Bootcamps e Transforme sua Carreira!</h2>
+          <p class="introducaoTexto">
+            Prepare-se para uma jornada transformadora com nosso Bootcamp! <br />
+            Adquira habilidades práticas e atualizadas, aprenda com mentores especializados e aumente suas chances de
+            empregabilidade. <br />
+            Ideal para profissionais que desejam mudar de carreira, recém-formados e empreendedores, nosso programa
+            oferece um currículo atualizado, aprendizado prático e uma ampla rede de contatos.
+          </p>
+        </div>
+
+        <div class="formularioMatricula">
+          <h2 class="formularioMatriculaTitulo">Inicie sua jornada em um dos nossos bootcamps!</h2>
+          <div class="formularioConteudo">
+
+            <form action="#" class="formFormulario">
+
+              <div class="formLinha formLinha1">
+                <label for="nome" class="formularioConteudoLabel">
+                  <input name="nome" id="nome" class="input is-large formularioConteudoInput inputNome" type="text"
+                    placeholder="Nome Completo" required />
+                </label>
+                <label for="dataNascimento" class="formularioConteudoLabel">
+                  <input name="dataNascimento" id="dataNascimento"
+                    class="input is-large formularioConteudoInput inputNascimento" type="date" placeholder="Large input"
+                    required />
+                </label>
+              </div>
+
+              <div class="formLinha formLinha2">
+                <label for="email" class="formularioConteudoLabel">
+                  <input name="email" id="email" class="input is-large formularioConteudoInput inputEmail" type="email"
+                    placeholder="Seu e-mail" required />
+                </label>
+                <label for="telefone" class="formularioConteudoLabel">
+                  <input name="telefone" id="telefone" class="input is-large formularioConteudoInput inputNascimento"
+                    type="text" placeholder="Nº Celular" minlength="11" required />
+                </label>
+              </div>
+
+              <div class="formLinha formLinha3">
+                <label for="registro" class="formularioConteudoLabel">
+                  <input name="registro" id="registro" class="input is-large formularioConteudoInput inputRegistro"
+                    type="text" placeholder="Nº do RG(somente os numeros)" minlength="9" required />
+                </label>
+                <label for="estado" class="select is-large formularioConteudoLabel">
+                  <select name="estado" id="estado" class="formularioConteudoInput inputEstado" required>
+                    <option value="default">Estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="formLinha formLinha4">
+
+                <div class="formGeneroConteudo">
+                  <h4 class="formGeneroTitulo">Escolha o gênero que você se identifica</h4>
+                  <div class="control formGenero">
+                    <label for="genero" class="radio formGeneroOpicao">
+                      <input type="radio" name="genero" />
+                      <p class="opcaoGenero">Masculino</p>
+                    </label>
+                    <label for="genero" class="radio formGeneroOpicao">
+                      <input type="radio" name="genero" checked />
+                      <p class="opcaoGenero">Feminino</p>
+                    </label>
+                    <label for="genero" class="radio formGeneroOpicao">
+                      <input type="radio" name="genero" checked />
+                      <p class="opcaoGenero">Não Binário</p>
+                    </label>
+                  </div>
+                </div>
+
+                <label for="curso" class="select is-large formularioConteudoLabel">
+                  <select name="curso" id="curso">
+                    <option value="default">Cursos</option>
+                    <option value="DesenvolvimentoWeb">Desenvolvimento Web Full Stack</option>
+                    <option value="DesenvolvimentoJogos">Desenvolvimento de Jogos</option>
+                    <option value="InteligenciaArtificial">Inteligência Artificial e Machine Learning</option>
+                    <option value="CyberSeguranca">Cybersegurança</option>
+                    <option value="AnalistaQa">Analista de QA</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="formLinha formLinha5">
+
+                <div class="termosCondicoes">
+                  <input type="checkbox" id="termos" name="termos" required>
+                  <label for="termos" class="aceiteLabel"> <p class="aceiteTexto">Eu aceito os <a class="aceiteLink" href="#">termos e condições</a></p></label>
+                </div>
+
+                <button type="submit" class="button is-medium formFormularioBtn">Matricular</button>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Comum em todas as páginas -->
+
+    <footer class="rodape">
+
+      <div class="rodapeConteudo" id="contatos">
+        <div class="rodapeBrand">
+          <img class="rodapeLogo" src="../Assets/imagens/EduCode_Logo_branco.png" alt="Logo do Educode">
+          <p class="rodapeBrandTexto">
+            Todos os direitos reservados &copy; EduCode 2024 ||<br /> CNPJ.: 00.000.000/0000-00 .
+          </p>
+        </div>
+
+        <div class="rodapeContatos">
+
+          <div class="subscribe">
+            <p class="subscribeTexto">Receba as nossas atualizações</p>
+
+            <label for="subscribe" class="subscribeBox">
+              <input name="subscribe" id="subscribe" type="email" class="subscribeInput" required
+                placeholder=" Seu melhor email">
+              <button type="submit" class="subscribeBtn"></button>
+            </label>
+          </div>
+
+
+        </div>
+        <div class="contatosRedes">
+
+          <div class="redesNeto redes">
+            <a href="https://www.linkedin.com/in/neto-russo/" target="_blank" title="Neto Russo || Linkedin">
+              <div class="linkedin social"></div>
+            </a>
+            <a href="https://github.com/netorusso" target="_blank" title="Neto Russo || Github">
+              <div class="github social"></div>
+            </a>
+            <a href="https://www.instagram.com/neto.russo/" target="_blank" title="Neto Russo || instagram">
+              <div class="instagram social"></div>
+            </a>
+            <h5 class="nomeRedes">Neto Russo</h5>
+          </div>
+
+          <div class="redesGabriel redes">
+            <a href="https://www.linkedin.com/in/gabriel-terto-5ba253247/" target="_blank"
+              title="Gabriel Terto || Linkedin">
+              <div class="linkedin social"></div>
+            </a>
+            <a href="https://github.com/gabriellterto" target="_blank" title="Gabriel Terto || Github">
+              <div class="github social"></div>
+            </a>
+            <a href="https://www.instagram.com/gaabrielmariano/" target="_blank" title="Gabriel Terto || instagram">
+              <div class="instagram social"></div>
+            </a>
+            <h5 class="nomeRedes">Gabriel Terto</h5>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

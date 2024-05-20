@@ -1,0 +1,239 @@
+@import url(./rootEReset.css);
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.bannerVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-attachment: fixed;
+  position: fixed;
+}
+
+.detalhe {
+  width: 100%;
+  height: 100%;
+  background-image: url(../Assets/imagens/detalhe02.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  filter: drop-shadow(0 -75px 30px rgba(86, 145, 227, 0.8));
+  /* z-index: 0; */
+}
+
+
+.bannerChamada {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  margin-top: -150px;
+}
+
+.bannerLogo {
+  width: 320px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.bannerTitulo {
+  min-width: 320px;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-branco);
+  font-size: var(--clamp-titulo-1);
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.principal {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--cor-branco);
+
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.introducao {
+  width: 80%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.introducaoTitulo {
+  font-family: var(--fonte-titulo);
+  font-size: var(--clamp-titulo-2);
+  color: var(--cor-tom);
+}
+
+.introducaoTexto {
+  width: 80%;
+  min-width: 300px;
+  font-family: var(--fonte-padrao);
+  font-size: var(--clamp-texto-padrao);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--cor-dark);
+}
+
+.formularioMatricula {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.formularioMatriculaTitulo {
+  width: 80%;
+  min-width: 320px;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-destaque-2);
+  font-size: var(--clamp-titulo-2);
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+.formularioConteudo {
+  width: 80%;
+  min-width: 320px;
+  padding-bottom: 100px;
+}
+
+.formFormulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formLinha {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.formularioConteudoLabel {
+  width: 40%;
+  min-width: 280px;
+}
+
+.formularioConteudoInput {
+  width: 100%;
+  background-color: var(--cor-branco);
+  color: var(--cor-dark);
+
+
+}
+
+.formularioConteudoInput::placeholder {
+  color: var(--cor-dark);
+  font-family: var(--fonte-padrao);
+  font-weight: 500;
+}
+
+.inputNascimento {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+}
+
+.navbar-link:not(.is-arrowless):after, .select:not(.is-multiple):not(.is-loading):after { 
+  border: none;
+}
+
+
+
+.select select:not([multiple]) {
+  background-color: var(--cor-branco);
+  color: var(--cor-dark);
+  font-family: var(--fonte-padrao);
+  font-weight: 500;
+  width: 280px;
+}
+
+.formGeneroConteudo {
+  width: 40%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.formGeneroTitulo {
+  width: 100%;
+  min-width: 280px;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-dark);
+  font-size: 24px;
+}
+
+.formGenero {
+  display: flex;
+  gap: 10px;
+}
+
+.formGeneroOpicao {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.opcaoGenero {
+  font-family: var(--fonte-padrao);
+  color: var(--cor-dark);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.termosCondicoes {
+  display: flex;
+  gap: 5px;
+}
+
+.formLinha5 {
+  width: 100%;
+justify-content: space-evenly;
+}
+.aceiteTexto {
+  width: 100%;
+  font-family: var(--fonte-padrao);
+  color: var(--cor-dark);
+}
+
+.aceiteLink {
+  text-decoration: underline;
+}
+
+.formFormularioBtn {
+  background-color: var(--cor-tom);
+  border: 0;
+  box-shadow: inset 6px 10px 10px 5px var(--cor-shadow-dark-fraco), 6px 10px 10px 5px var(--cor-shadow-tom-fraco);
+}
+
+.formFormularioBtn:hover {
+  scale: 0.9;
+  box-shadow: inset -6px -10px 10px 5px var(--cor-shadow-dark-fraco);
+  transition: all 300ms ease-in-out;
+}

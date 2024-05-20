@@ -117,17 +117,16 @@ a {
 }
 
 .linkAtivo {
-  background-color: var(--cor-tom);
+  background-color: var(--cor-base);
   color: var(--cor-branco);
   border-radius: 20px;
   pointer-events: none;
 }
 
 .navBarLink:active {
-  background-color: var(--cor-tom);
+  background-color: var(--cor-base);
   color: var(--cor-branco);
   border-radius: 20px;
-
 }
 
 .loginLink {
