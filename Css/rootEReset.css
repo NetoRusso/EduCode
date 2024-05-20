@@ -121,7 +121,7 @@ a {
   background-color: var(--cor-tom);
   color: var(--cor-branco);
   border-radius: 20px;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .loginLink {
